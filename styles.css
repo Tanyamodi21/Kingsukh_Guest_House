@@ -1,31 +1,42 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  padding-top: 56px; /* Adjust for fixed navbar */
+  padding-top: 60px; 
+}
+
+.navbar {
+  background-color: #909a71e6 !important; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  margin-left: 40px;
 }
 
 .navbar-brand {
   font-weight: bold;
-  color: #2c3e50;
+  color: #c3eebf;
+  font-size: 1.5em;
 }
 
 .nav-link {
-  color: #2980b9;
+  color: #33d674;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #3498db;
+  color: #1ca63c;
 }
 
 .btn-primary {
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #d63384;
+  border-color: #d63384;
 }
 
 .btn-primary:hover {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: #a61c5d;
+  border-color: #a61c5d;
 }
 
 section {
@@ -36,7 +47,7 @@ section {
 .home-section {
   background: url("assets/ayodhya.webp") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,30 +56,30 @@ section {
   color: white;
 }
 
+.home-section p {
+  animation: fadeIn 2s ease-in-out;
+  color: #0e2b1d; 
+  font-size: 1.3em;
+  
+}
+
 .home-section h1 {
   animation: fadeIn 1s ease-in-out;
   color: #fff;
   font-size: 3em;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .home-section h2 {
   animation: fadeIn 1.5s ease-in-out;
   color: #eee;
   font-size: 4em;
-  margin: 0;
 }
 
 .home-section h2 .highlight {
-  font-size: 2em;
-  color: #000; /* Red color */
-}
-
-.home-section p {
-  animation: fadeIn 2s ease-in-out;
-  color: #bbb; /* Blue color */
-  font-size: 1.3em;
-  margin-top: 10px;
+  font-size: 1.4em;
+  color: #62c4eae1; 
 }
 
 @keyframes fadeIn {
@@ -76,39 +87,37 @@ section {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 4;
   }
 }
 
 /* styles.css */
 .about-section {
-  background: url("assets/mithonDam.webp") no-repeat center center;
-  background-size: cover;
-  padding: 60px 0;
   color: white;
   position: relative;
-  margin-top: 10px;
-  height: 800px;
+  margin-top: 8 px;
+  height: 456px;
 }
 
 .about-section .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+  background: rgba(8, 68, 16, 0.5);
+  padding: 0 px;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 10 px;
+
 }
 
 .about-section h2 {
   animation: fadeIn 1s ease-in-out;
-  color: #f39c12; /* Gold color */
+  color: #4b5b0c; 
   font-size: 2.5em;
   margin-bottom: 20px;
+  margin-left: 180px;
 }
 
 .about-section p {
   animation: fadeIn 1.5s ease-in-out;
-  color: #ffffff;
+  color: #213724;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -116,64 +125,42 @@ section {
 .about-section img {
   animation: fadeIn 2s ease-in-out;
   border-radius: 10px;
-  margin-bottom: 20px;
+}
+/* Attractions Section */
+.attractions-section {
+  background-color: rgba(8, 68, 16, 0.5);
+  padding: 20px 0;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 18px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* styles.css */
-.services-section {
-  background: url("assets/palash.webp") no-repeat center center;
-  background-size: cover;
-  padding: 60px 0;
-  position: relative;
-  color: white;
-  height: 800px;
-  margin-top: 10px;
-}
-
-.services-section .white-box {
-  background: white;
-  color: #2c3e50;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 800px;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-  margin: 60px 0px 0px 180px;
-}
-
-.services-section h2 {
-  color: #2980b9; /* Blue color */
+.attractions-section .section-heading {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  color: #103110;
+  margin-bottom: 4px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.services-section p {
-  color: #e74c3c; /* Red color */
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.services-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.services-section ul li {
-  color: #3498db; /* Light blue color */
+.attractions-section .section-subtext {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  color: #424b45;
+  margin-bottom: 40px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
+.attractions-section h4 {
+  color: #303630;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.attractions-section p {
+  color: #34495e;
+  font-size: 1em;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -181,17 +168,100 @@ section {
   to {
     opacity: 1;
   }
+}
+
+
+/* styles.css */
+.services-section {
+  position: relative;
+  background: url("assets/service.jpg") no-repeat center center;
+  background-size: cover;
+  height: 560px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+/* 🔲 Overlay for opacity effect */
+.services-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(169, 207, 162, 0.5); /* <-- adjust opacity here */
+  z-index: 1;
+}
+
+/* Content goes above the overlay */
+.services-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0;
+}
+
+/* Optional: White Box inside */
+.white-box {
+  background: white;
+  color: #2c3e50;
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 1000px;
+  height: 270px;
+  animation: fadeIn 1s ease-in-out;
+  margin: 0 auto;
+}
+
+.services-title {
+  color: #277139;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.services-subtitle {
+  color: #8bab9b;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+.services-section ul {
+  list-style-type: none;
+  padding: 0px;
+  word-spacing: 8px;
+  line-height: 45px;
+}
+
+.services-section ul li {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  color: #714b1d; 
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  
+}
+
+.services-list li:nth-child(1) { animation-delay: 0.3s; }
+.services-list li:nth-child(2) { animation-delay: 0.6s; }
+.services-list li:nth-child(3) { animation-delay: 0.9s; }
+.services-list li:nth-child(4) { animation-delay: 1.2s; }
+.services-list li:nth-child(5) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* styles.css */
 .rooms-section {
-  padding: 60px 0;
-  background-color: #f8f9fa;
+  padding: 50px 0;
+  background-color: rgba(8, 68, 16, 0.5);
   text-align: center;
+  margin-top: 15px;
 }
 
 .rooms-section h2 {
-  color: #2980b9; /* Blue color */
+  color: #277139; /* Blue color */
   font-size: 2.5em;
   margin-bottom: 40px;
   animation: fadeIn 1s ease-in-out;
@@ -203,7 +273,16 @@ section {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(214, 51, 132, 0.2);
+}  
 
 .room-card .card-img-top {
   border-radius: 10px 10px 0 0;
@@ -222,7 +301,7 @@ section {
 }
 
 .room-card .card-title {
-  color: #e74c3c; /* Red color */
+  color: #2e1687; /* Red color */
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -260,7 +339,7 @@ section {
 }
 
 .gallery-section h2 {
-  color: #2980b9; /* Blue color */
+  color: #277139; /* Blue color */
   font-size: 2.5em;
   margin-bottom: 40px;
   animation: fadeIn 1s ease-in-out;
@@ -312,7 +391,7 @@ section {
 }
 
 .contact-section h2 {
-  color: #2980b9; /* Blue color */
+  color: #277139; /* Blue color */
   font-size: 2.5em;
   margin-bottom: 40px;
   animation: fadeIn 1s ease-in-out;
@@ -324,29 +403,37 @@ section {
   animation: fadeInUp 1s ease-in-out;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: rgba(8, 68, 16, 0.5);
 }
 
 .contact-info-card .card-body,
 .contact-form-card .card-body {
-  padding: 20px;
+  padding: 40px;
+}
+
+.contact-info-card .card-contact{
+  margin-bottom: 0px;
 }
 
 .contact-info-card p {
   color: #2c3e50; /* Dark color */
   font-size: 1.2em;
+  padding: 4px;
+  text-align: left;
 }
 
 .social-icons a {
-  color: #2980b9; /* Blue color */
-  font-size: 2em;
-  margin: 0 10px;
+  color: #a9bbc6; /* Blue color */
+  font-size: 100px;
+  margin: 0px 10px;
   transition: color 0.3s;
+  
 }
 
 .social-icons a:hover {
   color: #3498db; /* Light blue color */
 }
+
 
 .form-group label {
   color: #2c3e50; /* Dark color */
@@ -389,7 +476,7 @@ section {
 
 /* styles.css */
 .footer-section {
-  background-color: #2c3e50;
+  background-color: #3a4149;
   color: white;
   padding: 40px 0;
   text-align: center;
