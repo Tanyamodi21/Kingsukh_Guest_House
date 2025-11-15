@@ -71,5 +71,5 @@ Navigation links not differentiated	               Improved link styling and hov
 
 ## Live Site
 
-https://tanyamodi21.github.io/Kingsukh_Guest_House/
+[live link](https://tanyamodi21.github.io/Kingsukh_Guest_House/)
 
